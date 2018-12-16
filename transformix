@@ -1,0 +1,22 @@
+#!/bin/bash
+export DYLD_LIBRARY_PATH=/Applications/elastix_macosx64_v4.8/lib:$DYLD_LIBRARY_PATH
+
+transformix -in ./data/Training_Set/IBSR_18/IBSR_18_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_18 -tp ./registered-data/Training_Set/templates/IBSR_18/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_16/IBSR_16_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_16 -tp ./registered-data/Training_Set/templates/IBSR_16/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_05/IBSR_05_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_05 -tp ./registered-data/Training_Set/templates/IBSR_05/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_03/IBSR_03_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_03 -tp ./registered-data/Training_Set/templates/IBSR_03/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_04/IBSR_04_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_04 -tp ./registered-data/Training_Set/templates/IBSR_04/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_08/IBSR_08_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_08 -tp ./registered-data/Training_Set/templates/IBSR_08/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_01/IBSR_01_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_01 -tp ./registered-data/Training_Set/templates/IBSR_01/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_06/IBSR_06_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_06 -tp ./registered-data/Training_Set/templates/IBSR_06/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_07/IBSR_07_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_07 -tp ./registered-data/Training_Set/templates/IBSR_07/TransformParameters.1.txt
+transformix -in ./data/Training_Set/IBSR_09/IBSR_09_seg.nii.gz -out ./registered-data/Training_Set/labels/IBSR_09 -tp ./registered-data/Training_Set/templates/IBSR_09/TransformParameters.1.txt
+
+transformix -in ./data/Validation_Set/IBSR_17/IBSR_17_seg.nii.gz -out ./registered-data/Validation_Set/labels/IBSR_17 -tp ./registered-data/Validation_Set/templates/IBSR_17/TransformParameters.1.txt
+transformix -in ./data/Validation_Set/IBSR_11/IBSR_11_seg.nii.gz -out ./registered-data/Validation_Set/labels/IBSR_11 -tp ./registered-data/Validation_Set/templates/IBSR_11/TransformParameters.1.txt
+transformix -in ./data/Validation_Set/IBSR_13/IBSR_13_seg.nii.gz -out ./registered-data/Validation_Set/labels/IBSR_13 -tp ./registered-data/Validation_Set/templates/IBSR_13/TransformParameters.1.txt
+transformix -in ./data/Validation_Set/IBSR_14/IBSR_14_seg.nii.gz -out ./registered-data/Validation_Set/labels/IBSR_14 -tp ./registered-data/Validation_Set/templates/IBSR_14/TransformParameters.1.txt
+transformix -in ./data/Validation_Set/IBSR_12/IBSR_12_seg.nii.gz -out ./registered-data/Validation_Set/labels/IBSR_12 -tp ./registered-data/Validation_Set/templates/IBSR_12/TransformParameters.1.txt
+
+
+

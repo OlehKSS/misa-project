@@ -1,0 +1,23 @@
+#!/bin/bash
+export DYLD_LIBRARY_PATH=/Applications/elastix_macosx64_v4.8/lib:$DYLD_LIBRARY_PATH
+
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_18/IBSR_18.nii.gz -out ./registered-data/Training_Set/templates/IBSR_18 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_16/IBSR_16.nii.gz -out ./registered-data/Training_Set/templates/IBSR_16 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_05/IBSR_05.nii.gz -out ./registered-data/Training_Set/templates/IBSR_05 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_03/IBSR_03.nii.gz -out ./registered-data/Training_Set/templates/IBSR_03 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_04/IBSR_04.nii.gz -out ./registered-data/Training_Set/templates/IBSR_04 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_08/IBSR_08.nii.gz -out ./registered-data/Training_Set/templates/IBSR_08 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_01/IBSR_01.nii.gz -out ./registered-data/Training_Set/templates/IBSR_01 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_06/IBSR_06.nii.gz -out ./registered-data/Training_Set/templates/IBSR_06 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_07/IBSR_07.nii.gz -out ./registered-data/Training_Set/templates/IBSR_07 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Training_Set/IBSR_09/IBSR_09.nii.gz -out ./registered-data/Training_Set/templates/IBSR_09 -p par0000affine.txt -p par0000bspline.txt
+
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Validation_Set/IBSR_17/IBSR_17.nii.gz -out ./registered-data/Validation_Set/templates/IBSR_17 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Validation_Set/IBSR_11/IBSR_11.nii.gz -out ./registered-data/Validation_Set/templates/IBSR_11 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Validation_Set/IBSR_13/IBSR_13.nii.gz -out ./registered-data/Validation_Set/templates/IBSR_13 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Validation_Set/IBSR_14/IBSR_14.nii.gz -out ./registered-data/Validation_Set/templates/IBSR_14 -p par0000affine.txt -p par0000bspline.txt
+elastix -f ./data/MNITemplateAtlas-norm/masked_template.nii.gz -m ./data/Validation_Set/IBSR_12/IBSR_12.nii.gz -out ./registered-data/Validation_Set/templates/IBSR_12 -p par0000affine.txt -p par0000bspline.txt
+
+
+
+
