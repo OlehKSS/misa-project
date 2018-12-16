@@ -1,0 +1,16 @@
+1:ItNr	1a:SrchDirNr	1b:LineItNr	2:Metric	3:StepLength	4a:||Gradient||	4b:||SearchDir||	4c:DirGradient	5:Phase	6a:Wolfe1	6b:Wolfe2	7:LinSrchStopCondition	Time[ms]
+0	0	2	-0.627495	42.000000	0.002667	1.000000	-0.000674	Main	true	true	WolfeSatisfied	386.6
+1	1	1	-0.653386	0.456325	0.002421	42.464870	0.007878	Main	true	true	WolfeSatisfied	233.8
+2	2	1	-0.655542	1.003785	0.002013	16.136222	-0.000765	Main	true	true	WolfeSatisfied	237.4
+3	3	0	-0.689963	2.000000	0.001768	10.620056	-0.003730	Main	true	true	WolfeSatisfied	155.2
+4	4	0	-0.683687	2.000000	0.002524	20.684300	0.012257	Main	true	true	WolfeSatisfied	150.2
+5	5	0	-0.714646	2.000000	0.002004	12.484677	0.013681	Main	true	true	WolfeSatisfied	150.2
+6	6	0	-0.701875	2.000000	0.002384	19.615359	0.016123	Main	true	true	WolfeSatisfied	148.4
+7	7	1	-0.725535	1.136905	0.001174	12.083135	-0.002838	Main	true	true	WolfeSatisfied	226.9
+8	8	0	-0.724679	2.000000	0.001555	8.744449	0.002163	Main	true	true	WolfeSatisfied	156.1
+9	9	0	-0.740626	2.000000	0.001357	14.326719	0.001151	Main	true	true	WolfeSatisfied	154.3
+10	10	0	-0.734303	2.000000	0.001383	9.692994	0.003340	Main	true	true	WolfeSatisfied	154.7
+11	11	0	-0.750334	2.000000	0.001623	11.063192	0.005124	Main	true	true	WolfeSatisfied	152.6
+12	12	0	-0.744302	2.000000	0.001731	11.988298	0.008425	Main	true	true	WolfeSatisfied	150.1
+13	13	0	-0.735765	2.000000	0.001962	8.829082	0.010100	Main	true	true	WolfeSatisfied	155.3
+14	14	1	-0.766234	1.037448	0.000780	8.296835	-0.001227	Main	true	true	WolfeSatisfied	230.2
