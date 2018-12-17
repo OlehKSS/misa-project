@@ -1,5 +1,0 @@
-transformix -in ./data/Validation_Set/IBSR_17/IBSR_17_seg.nii.gz -out ./registered-data/Par0009/Validation_Set/labels/IBSR_17 -tp ./registered-data/Par0009/Validation_Set/templates/IBSR_17/TransformParameters.1.txt
-transformix -in ./data/Validation_Set/IBSR_11/IBSR_11_seg.nii.gz -out ./registered-data/Par0009/Validation_Set/labels/IBSR_11 -tp ./registered-data/Par0009/Validation_Set/templates/IBSR_11/TransformParameters.1.txt
-transformix -in ./data/Validation_Set/IBSR_13/IBSR_13_seg.nii.gz -out ./registered-data/Par0009/Validation_Set/labels/IBSR_13 -tp ./registered-data/Par0009/Validation_Set/templates/IBSR_13/TransformParameters.1.txt
-transformix -in ./data/Validation_Set/IBSR_14/IBSR_14_seg.nii.gz -out ./registered-data/Par0009/Validation_Set/labels/IBSR_14 -tp ./registered-data/Par0009/Validation_Set/templates/IBSR_14/TransformParameters.1.txt
-transformix -in ./data/Validation_Set/IBSR_12/IBSR_12_seg.nii.gz -out ./registered-data/Par0009/Validation_Set/labels/IBSR_12 -tp ./registered-data/Par0009/Validation_Set/templates/IBSR_12/TransformParameters.1.txt
