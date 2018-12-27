@@ -209,9 +209,9 @@ def integrate_atlas_nii(original_im, y_pred, features_nonzero,
     wm_probs = weight_wm_im * wm_atlas
     
     # Assign GM, WM, CSF to voxel with highest probability
-    GM = GM_label * np.nan_to_num((gm_probs > csf_probs) * (gm_probs > wm_probs))
-    WM = WM_label * np.nan_to_num((wm_probs > csf_probs) * (wm_probs > gm_probs))
-    CSF = CSF_label * np.nan_to_num((csf_probs > wm_probs) * (csf_probs > gm_probs))
+    GM = GM_label * np.nan_to_num((gm_probs >= csf_probs) * (gm_probs > wm_probs))
+    WM = WM_label * np.nan_to_num((wm_probs > csf_probs) * (wm_probs >= gm_probs))
+    CSF = CSF_label * np.nan_to_num((csf_probs >= wm_probs) * (csf_probs > gm_probs))
     seg_im = GM + WM + CSF
     
     segment_im = np.zeros(original_img_len)
