@@ -286,3 +286,39 @@ def seg_correct_labels_to_nii(original_im, y_pred, features_nonzero,
     segment_nii = nib.Nifti1Image(segment_im, original_im.affine, original_im.header)
 
     return segment_nii
+
+
+def fill_outliers(volume):
+    """
+    Fills outliers (holes) in 3D arrays based on 3x3x3 neighborhood.
+
+    Args:
+        volume (numpy.ndarray): an array to process.
+    """
+    nz_h, nz_w, nz_d = np.nonzero(volume)
+    # find brain boundaries
+    min_h = nz_h.min()
+    max_h = nz_h.max()
+    min_w = nz_w.min()
+    max_w = nz_w.max()
+    min_d = nz_d.min()
+    max_d = nz_d.max()
+
+    # min, max values border with the background, so we can skip them, since
+    # we want to check segmentation of inner tissues
+    # P.S. the range statement does not include the last element
+    for ind_h in range(min_h + 1, max_h):
+        for ind_w in range(min_w + 1, max_w):
+            for ind_d in range(min_d + 1, max_d):
+                pixel_label = volume[ind_h, ind_w, ind_d]
+                # check labels in 3x3x3 neighborhood, 8-connected
+                nbrs = volume[ind_h - 1: ind_h + 2,
+                              ind_w - 1: ind_w + 2,
+                              ind_d - 1: ind_d + 2]
+                if np.sum(nbrs == pixel_label) == 1:
+                    # central pixel has no connections with
+                    # assing to the value to the left
+                    # print('An outlier found.')
+                    volume[ind_h, ind_w, ind_d] = volume[ind_h, ind_w - 1, ind_d]
+    
+    return volume
