@@ -1,4 +1,4 @@
-# mira-project
+# misa-project
 Repository for MISA Project
 
 The best segmentation method was weighted multi-atlas with data matched to the MNI atlas and registered with Par0009
