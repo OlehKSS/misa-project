@@ -1,0 +1,3 @@
+transformix -in ./segmentation-results/Par0009-matched-to-mni/hist-segmentation-weighted_ma/IBSR_10/atlas_hist_seg.nii.gz -out ./Test-Set-Results/labels/IBSR_10 -tp ./Test-Set-Results/templates/IBSR_10/TransformParameters.1.txt
+transformix -in ./segmentation-results/Par0009-matched-to-mni/hist-segmentation-weighted_ma/IBSR_02/atlas_hist_seg.nii.gz -out ./Test-Set-Results/labels/IBSR_02 -tp ./Test-Set-Results/templates/IBSR_02/TransformParameters.1.txt
+transformix -in ./segmentation-results/Par0009-matched-to-mni/hist-segmentation-weighted_ma/IBSR_15/atlas_hist_seg.nii.gz -out ./Test-Set-Results/labels/IBSR_15 -tp ./Test-Set-Results/templates/IBSR_15/TransformParameters.1.txt
