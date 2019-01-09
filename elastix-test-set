@@ -1,4 +1,7 @@
+#!/bin/bash
+export DYLD_LIBRARY_PATH=/Applications/elastix_macosx64_v4.8/lib:$DYLD_LIBRARY_PATH
+
 elastix -f ./data/Test_Set/IBSR_10/IBSR_10.nii.gz -m ./registered-data/Par0009-matched-to-mni/Test_Set/templates/IBSR_10/result.1.nii.gz -out ./Test-Set-Results/templates/IBSR_10 -p ./parameter-files/par0009.affine.txt -p ./parameter-files/par0009.bspline.txt
-elastix -f ./data/Test_Set/.DS_Store/.DS_Store.nii.gz -m ./registered-data/Par0009-matched-to-mni/Test_Set/templates/.DS_Store/result.1.nii.gz -out ./Test-Set-Results/templates/.DS_Store -p ./parameter-files/par0009.affine.txt -p ./parameter-files/par0009.bspline.txt
 elastix -f ./data/Test_Set/IBSR_02/IBSR_02.nii.gz -m ./registered-data/Par0009-matched-to-mni/Test_Set/templates/IBSR_02/result.1.nii.gz -out ./Test-Set-Results/templates/IBSR_02 -p ./parameter-files/par0009.affine.txt -p ./parameter-files/par0009.bspline.txt
 elastix -f ./data/Test_Set/IBSR_15/IBSR_15.nii.gz -m ./registered-data/Par0009-matched-to-mni/Test_Set/templates/IBSR_15/result.1.nii.gz -out ./Test-Set-Results/templates/IBSR_15 -p ./parameter-files/par0009.affine.txt -p ./parameter-files/par0009.bspline.txt
+
